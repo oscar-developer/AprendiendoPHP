@@ -1,7 +1,7 @@
 <?php 
 	
 namespace Vehicles;
-	class VehicleBase
+	 abstract class VehicleBase
 	{
 		
 		//Atributos
@@ -27,7 +27,13 @@ namespace Vehicles;
 		//Metodos
 		public function move()
 		{
+			echo $this->StartEngine();//Agregando fucionalidad al metodo abstracto
 			echo 'moving <br>';
 		}
+
+
+
+		public abstract function StartEngine();
+		
 	}
  ?>

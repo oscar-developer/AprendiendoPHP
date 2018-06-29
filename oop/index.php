@@ -26,6 +26,9 @@
 
 	echo '<br> Total Trucks: '.Truck::getTotal().'<br>';
 
+	// $Vehic = new Vehicles\VehicleBase('Hered');  no es posible instanciar o crearobjetos de clases abstractas
+	
+
 
 
  ?>

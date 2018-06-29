@@ -3,10 +3,14 @@ namespace Vehicles;
 require_once 'VehicleBase.php';
 
 	class Car extends VehicleBase
+	{
+		public function move()
 		{
-			public function move()
-			{
-				echo 'Car: moving<br>';			
-			}
+			echo 'Car: moving<br>';			
 		}
+		public function StartEngine()
+		{
+			return 'car: start Engine';			
+		} 
+	}
  ?>

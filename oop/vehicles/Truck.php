@@ -23,6 +23,7 @@ require_once 'VehicleBase.php';
 		//Metodos
 		public function move()
 		{
+			parent::move();//para que muestre el mensaje que realizaba el metodo move de la clase padre
 			echo 'Truck-'.$this->type.': moving<br>';
 			
 		}
@@ -31,6 +32,12 @@ require_once 'VehicleBase.php';
 		public static function getTotal()
 		{
 			return self::$count;
+		}
+
+		//Declarando el metodo abstracto obligatorio de la clase padre
+		public function StartEngine()
+		{
+			return 'Truck: start Engine <br>';			
 		}		
 	}
  ?>
