@@ -31,7 +31,11 @@
 	echo 'CLASS Car <br>';
 	$car = new Car('Mercedes');
 	$car->move();
+
+	echo $car->getpos().'<br>';
+
 	echo 'Owner car: '.$car->getOwner().'<br>';
+
 	
 
 	echo '<br>CLASS Truck1 <br>';	
